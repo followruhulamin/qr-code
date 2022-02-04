@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR code Generator</title>
+    <link rel="shoertcut icon" href="Images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <p>QR Code</p>
+        <input id="input" type="text" class="input" placeholder="Enter Something">
+        <button id="generate" class="btn" onclick="qrgenerate()">Generate QR Code</button>
+        <div class="code" id="qr" alt="Your QR code will show here"></div>
+        <div id="qrShow"><img src="images/default.png" class="code"></div>
+
+
+        <p id="note">Made with ♥ by Ruhul Amin</p>
+    </div>
+    <script src="qrcode.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
